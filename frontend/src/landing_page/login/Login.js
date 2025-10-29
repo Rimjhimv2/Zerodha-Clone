@@ -28,7 +28,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/auth/login",
+        "https://zerodha-backend-gnpr.onrender.com/auth/login",
         { ...inputValue },
         { withCredentials: true } 
       );

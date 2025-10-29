@@ -29,7 +29,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/auth/signup",
+        "https://zerodha-backend-gnpr.onrender.com/auth/signup",
         { ...inputValue },
         { withCredentials: true }
       );
