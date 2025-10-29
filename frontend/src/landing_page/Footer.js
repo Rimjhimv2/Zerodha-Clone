@@ -24,7 +24,7 @@ function Footer() {
                 
 
               <a
-                href="https://x.com/zerodhaonline"
+                href="https://x.com/rimjhimv303?t=Bxwls41QGjjE8ilWH-Fclw&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-dark"
