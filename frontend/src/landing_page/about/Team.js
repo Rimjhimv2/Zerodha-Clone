@@ -71,7 +71,8 @@ function Team() {
            {/* Member 2 */}
         <div className="col-md-4 mb-5">
           <img
-            src="/ media/images/nithin-kamath.jpg"
+            src="/media/images/nithin-kamath.jpg"
+          
 
             alt="Dr. Kailash Nadh"
             style={{
