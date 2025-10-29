@@ -39,7 +39,7 @@ const Signup = () => {
 
         
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "https://zerodha-clone-c48l.vercel.app";
         }, 1000);
       } else {
         handleError("Signup failed, please try again.");

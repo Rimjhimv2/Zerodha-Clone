@@ -36,7 +36,7 @@ const Login = () => {
       if (data.success) {
   handleSuccess(data.message || "Login successful");
   setTimeout(() => {
-    window.location.href = "http://localhost:3001";
+    window.location.href = "https://zerodha-clone-c48l.vercel.app";
   }, 1000); 
 }
 
