@@ -262,7 +262,7 @@ function Team() {
         {/* Member 3 */}
         <div className="col-md-4 mb-5">
           <img
-            src="/media/images/Karthik.jpg"
+            src="/media/images/karthik.jpg"
             alt="Karthik Rangappa"
             style={{
               borderRadius: "50%",
