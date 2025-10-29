@@ -110,7 +110,7 @@ function Team() {
         {/* Member 2 */}
         <div className="col-md-4 mb-5">
           <img
-            src="/media/images/Kailash.jpg"
+            src="/media/images/Austin.jpg"
             alt="Dr. Kailash Nadh"
             style={{
               borderRadius: "50%",
@@ -263,7 +263,7 @@ function Team() {
         <div className="col-md-4 mb-5">
           <img
             src="/media/images/karthik.jpg"
-            alt="Karthik Rangappa"
+            alt="karthik"
             style={{
               borderRadius: "50%",
               width: "70%",
@@ -271,7 +271,7 @@ function Team() {
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}
           />
-          <h5 className="mt-3 mb-1">Karthik Rangappa</h5>
+          <h5 className="mt-3 mb-1">karthik</h5>
           <h6 className="text-secondary">COO</h6>
                  
 <p
