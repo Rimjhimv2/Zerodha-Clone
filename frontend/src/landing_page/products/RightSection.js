@@ -4,7 +4,7 @@ function RightSection({ imageUrl, productName, productDescription, learnMore }) 
   return (
     <div className="container ">
       <div className="row align-items-center">
-        {/* Text column */}
+        
         <div className="col-md-6 p-5 mt-5">
           <h1>{productName}</h1>
           <p>{productDescription}</p>
@@ -15,7 +15,7 @@ function RightSection({ imageUrl, productName, productDescription, learnMore }) 
           </div>
         </div>
 
-        {/* Image column */}
+        
         <div className="col-md-6">
           <img src={imageUrl} alt={productName} className="img-fluid" />
         </div>

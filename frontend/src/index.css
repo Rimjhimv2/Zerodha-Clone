@@ -48,18 +48,6 @@ Reset
   font-family: "Inter", Arial, sans-serif;
 }
 
-/* Auth Page Container */
-/* body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-} */
-
-
-
-
 /* Signup/Login Box */
 .form_container {
   width: 100%;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // ✅ important for toast styling
+import "react-toastify/dist/ReactToastify.css"; 
 
 const Login = () => {
   const navigate = useNavigate();
@@ -28,16 +28,16 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/auth/login", // ✅ fixed route to match backend
+        "http://localhost:3002/auth/login",
         { ...inputValue },
-        { withCredentials: true } // ✅ ensures JWT cookie is stored
+        { withCredentials: true } 
       );
 
       if (data.success) {
   handleSuccess(data.message || "Login successful");
   setTimeout(() => {
     window.location.href = "http://localhost:3001";
-  }, 1000); // Wait 1 second to show toast
+  }, 1000); 
 }
 
       else {

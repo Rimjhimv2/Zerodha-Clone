@@ -5,7 +5,7 @@ function Hero() {
   const navigate=useNavigate();
   return (
     <div className='container p-5 mb-5'>
-        {/* it will occupy the entire row since we not using any column */}
+        
       <div className='row text-center'>
         <img src='media/images/homeHero.png' alt='Hero Banner' className='mb-5'/>
       
@@ -18,7 +18,7 @@ function Hero() {
       
       onClick={()=>navigate("/signup")}
       >Signup Now</button>
-      </div> {/* Closing row */}
+      </div> 
     </div> 
   );
 }

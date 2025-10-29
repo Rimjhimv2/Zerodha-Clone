@@ -12,7 +12,7 @@ function Footer() {
         <p>&copy; 2010 - 2025, Zerodha Broking Ltd.</p>
         <p>All rights reserved.</p>
         
-{/* ==== Social Icons ==== */}
+
             <div className="d-flex gap-4 mt-3">
               <a
                 href="https://www.instagram.com/zerodhaonline/"

@@ -86,7 +86,7 @@ const Universe = () => {
           </p>
         </div>
 
-        {/* ✅ Correct navigation button */}
+        
         <div className="text-center">
           <button
             className="p-3 btn btn-btn-primary fs-5 mb-5"

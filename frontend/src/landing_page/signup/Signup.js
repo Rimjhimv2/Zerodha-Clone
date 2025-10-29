@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // ✅ important if not already imported globally
+import "react-toastify/dist/ReactToastify.css"; 
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -14,17 +14,17 @@ const Signup = () => {
 
   const { email, password, username } = inputValue;
 
-  // ✅ handle input changes
+
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue((prev) => ({ ...prev, [name]: value }));
   };
 
-  // ✅ Toast notifications
+
   const handleError = (err) => toast.error(err, { position: "bottom-left" });
   const handleSuccess = (msg) => toast.success(msg, { position: "bottom-right" });
 
-  // ✅ Handle form submit
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -37,7 +37,7 @@ const Signup = () => {
       if (data.message) {
         handleSuccess(data.message);
 
-        // ✅ Redirect to dashboard app running separately (port 3001)
+        
         setTimeout(() => {
           window.location.href = "http://localhost:3001";
         }, 1000);
@@ -49,7 +49,7 @@ const Signup = () => {
       handleError(error.response?.data?.message || "Server error");
     }
 
-    // Reset fields after submission
+
     setInputValue({ email: "", password: "", username: "" });
   };
 
@@ -111,7 +111,7 @@ const Signup = () => {
             </span>
           </form>
 
-          {/* ✅ Toast notification container */}
+      
           <ToastContainer />
         </div>
       </div>
