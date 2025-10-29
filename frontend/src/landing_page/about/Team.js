@@ -68,11 +68,12 @@ function Team() {
 
       {/* Row of 3 team members */}
       <div className="row text-center mt-5 text-muted">
-        {/* Member 1 */}
+           {/* Member 2 */}
         <div className="col-md-4 mb-5">
           <img
-            src="/media/images/Nikhil.jpg"
-            alt="Nikhil Kamath"
+            src="/ media/images/nithin-kamath.jpg"
+
+            alt="Dr. Kailash Nadh"
             style={{
               borderRadius: "50%",
               width: "70%",
@@ -80,6 +81,7 @@ function Team() {
               boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
             }}
           />
+          
           <h5 className="mt-3 mb-1">Nikhil Kamath</h5>
           <h6 className="text-secondary">Co-founder & CFO</h6>
           {/* Likes toggle section */}
