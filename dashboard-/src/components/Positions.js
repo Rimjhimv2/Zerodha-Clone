@@ -5,16 +5,21 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]); 
 
   useEffect(() => {
-    
-    axios
-      .get("https://zerodha-backend-gnpr.onrender.com/allPositions")
-      .then((res) => {
-        setAllPositions(res.data); 
-      })
-      .catch((err) => {
-        console.error("Error fetching positions:", err);
-      });
-  }, []);
+  axios
+    .get("https://zerodha-backend-gnpr.onrender.com/allPositions")
+    .then((res) => {
+      console.log("Positions API Response:", res.data); // Debugging
+      if (Array.isArray(res.data)) {
+        setAllPositions(res.data);
+      } else {
+        setAllPositions([]); // Prevent map() crash
+      }
+    })
+    .catch((err) => {
+      console.error("Error fetching positions:", err);
+      setAllPositions([]);
+    });
+}, []);
 
   return (
     <>

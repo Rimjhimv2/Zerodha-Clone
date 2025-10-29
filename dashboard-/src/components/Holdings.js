@@ -6,10 +6,21 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("https://zerodha-backend-gnpr.onrender.com/allHoldings").then((res) => {
-      setAllHoldings(res.data);
+  axios
+    .get("https://zerodha-backend-gnpr.onrender.com/allHoldings")
+    .then((res) => {
+      console.log("Holdings API Response:", res.data); // Debugging
+      if (Array.isArray(res.data)) {
+        setAllHoldings(res.data);
+      } else {
+        setAllHoldings([]); // Prevent crash if not array
+      }
+    })
+    .catch((err) => {
+      console.error("Error fetching holdings:", err);
+      setAllHoldings([]);
     });
-  }, []);
+}, []);
 
   const labels = allHoldings.map((stock) => stock.name);
 
